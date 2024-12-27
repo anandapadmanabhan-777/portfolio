@@ -4,5 +4,3 @@ numpy
 tensorflow
 keras
 streamlit-option-menu
-styles.css
-
