@@ -4,3 +4,4 @@ numpy
 tensorflow
 keras
 streamlit-option-menu
+python==3.11.7
