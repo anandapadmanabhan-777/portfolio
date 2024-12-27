@@ -14,9 +14,13 @@ st.set_page_config(
     page_icon="https://github.com/anandapadmanabhan-777/JustAnImage/raw/main/ai_brain.png", 
     layout="wide")
 
-# Injecting custom CSS
-with open("styles.css") as f:
+css_path = os.path.join(os.path.dirname(__file__), "styles.css")
+with open(css_path, "r") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# Injecting custom CSS
+# with open("styles.css") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Navbar menu
 selected = option_menu(
