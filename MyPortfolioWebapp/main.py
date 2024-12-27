@@ -15,14 +15,14 @@ st.set_page_config(
     layout="wide")
 
 # Get the path of the current working directory
-css_path = os.path.join(os.getcwd(), "styles.css")
+#css_path = os.path.join(os.getcwd(), "styles.css")
 
 # Read the CSS file and apply styles
-with open(css_path) as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+#with open(css_path) as f:
+    #st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 # Injecting custom CSS
-# with open("styles.css") as f:
-#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+with open("styles.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Navbar menu
 selected = option_menu(
