@@ -1,6 +1,10 @@
-streamlit== 1.41.1
+streamlit
 pandas
 numpy
+Pillow
 tensorflow
 keras
 streamlit-option-menu
+scikit-learn
+matplotlib
+tensorflow
