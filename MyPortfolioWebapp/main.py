@@ -14,7 +14,7 @@ st.set_page_config(
     layout="wide")
 
 # Injecting custom CSS
-with open("styles.css") as f:
+with open("portfolio/MyPortfolioWebapp/styles.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Navbar menu
