@@ -1,0 +1,222 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;700&display=swap');
+
+
+[data-testid="stAppViewContainer"] {
+    background-image: url('https://github.com/anandapadmanabhan-777/JustAnImage/raw/main/CarbonHive.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+[data-testid="stHeader"] {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+[data-testid="stToolbar"] {
+    display: none;
+}
+
+/* Container */
+.content-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;    
+}
+
+.content-container2 {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 15px; /* Consistent padding */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 800px; /* Restrict width */
+    width: fit-content; /* Fit to content size */
+    
+    margin: auto; /* Center the content */
+    box-sizing: border-box; /* Include padding in width/height */
+    text-align: center; /* Center-align text */
+}
+
+
+
+/* Custom Heading Style */
+.custom-heading {
+    font-family: 'Atma', cursive;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+/* Custom Heading Style */
+.custom-heading2 {
+    font-family: 'Atma', cursive;
+    font-size: 40px;
+    text-align: left;
+    
+}
+
+/* Custom Paragraphs Style */
+.custom-paragraph {
+    font-family: 'Atma', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Custom List Style */
+.custom-list {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/* Custom List Items Style */
+.custom-list-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+/* Custom Subheader Style */
+.custom-subheader {
+    font-family: 'Atma', cursive;
+    font-size: 26px;
+    text-align: left;
+}
+
+/* Custom Subheader Style */
+.custom-lines {
+    font-family: 'Atma', cursive;
+    font-size: 26px;
+    text-align: left;
+}
+
+/* Custom lines on the about page */
+.custom-lines2 {
+    font-family: 'Atma', cursive;
+    font-size: 26px;
+    text-align: center;
+}
+/* Custom lines for Education Details */
+.custom-lines3 {
+    font-family: 'Atma', cursive;
+    font-size: 26px;
+    text-align: left;
+    padding: 7px;
+}
+
+/* Styling the Buttons */
+div.stButton > button {
+    
+    font-size: 24px;
+    width: 100% ;
+    height: 60px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+}
+
+div.stButton > button:hover {
+    background-color: #ffe9c9;
+
+    color: #000000;
+}
+
+/* Styling for "Back to Projects" buttons specifically */
+div.stButton > button[key="back"] {
+    width: 150px;
+    background-color: #ff6347; /* Customize color */
+    color: white; /* Text color */
+    border-radius: 5px; /* Adjust border-radius if needed */
+}
+
+/* Hover effect for "Back to Projects" button */
+div.stButton > button:has-text("Back to Projects"):hover {
+    background-color: #ff4500;
+    color: white;
+}
+
+/* Hide Streamlit's built-in sidebar navigation */
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+.css-1lcbmhc.e1fqkh3o4 { display: none; } /* Hides the default multi-page structure */
+
+/* Style for the image container */
+.image-container {
+    text-align: right; /* Center the image */
+    margin-top: 20px;   /* Add space above */
+}
+
+/* Style for the image container */
+.image-container2 {
+    text-align: center; /* Center the image */
+    margin-top: 20px;   /* Add space above */
+}
+
+/* Style for the image */
+.image-container2 img {
+    max-width: 100%;    /* Make it responsive */
+    width: 250px;       /* Set a specific width */
+    border-radius: 15px; /* Rounded corners */
+    
+}
+
+/* Style for the image */
+.image-container img {
+    max-width: 100%;    /* Make it responsive */
+    width: 300px;       /* Set a specific width */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(104, 96, 96, 0.4), 0 -4px 8px rgba(0, 0, 0, 0.4), 4px 0 8px rgba(104, 96, 96, 0.4), -4px 0 8px rgba(0, 0, 0, 0.4);
+
+}
+
+/* Styling for all custom buttons */
+.custom-button {
+    font-family: 'Atma', cursive;
+    font-size: 24px;
+    height: 60px;
+    width: 200px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+/* Hover effect for custom buttons */
+.custom-button:hover {
+    background-color: #ffe9c9;
+}
+
+/* Specific styling for the button with ID "custom-button-1" */
+#custom-button-1 {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}
+
+/* Wrapper to hold both items side by side */
+.content-wrapper {
+    display: flex; /* Use flexbox to align items side by side */
+    justify-content: space-between; /* Space out the items */
+    align-items: center; /* Vertically center them */
+}
+/* For Social Icons in Home Page */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.social-icons div {
+    text-align: center;
+}
+.social-icons img {
+    width: 50px;
+}
+.social-icons p {
+    font-family: 'Lora', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
