@@ -14,6 +14,7 @@ def churn_page():
         unsafe_allow_html=True,
     )
     # Get the absolute path to the models folder
+    st.write(f"Model path: {model_path}")
     model_path = os.path.join(os.getcwd(), "models", "churn_model.keras")
 
     # Load the model
