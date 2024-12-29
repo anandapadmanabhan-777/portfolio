@@ -1,22 +1,3 @@
-# import streamlit as st
-# from keras.models import load_model
-# import pandas as pd
-
-# def churn_page():
-#     st.title("Customer Churn Prediction")
-#     churn_model = load_model('models/churn_model.keras')
-#     st.write("Customer Churn Model Loaded!")
-#     st.write("Upload a CSV file with customer data to predict churn.")
-#     uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
-#     if uploaded_file is not None:
-#         data = pd.read_csv(uploaded_file)
-#         st.write(data.head())
-#         if st.button("Predict Churn"):
-#             prediction = churn_model.predict(data)
-#             st.write("Prediction:", prediction)
-
-# END
-
 import streamlit as st
 import pandas as pd
 from keras.models import load_model
@@ -31,11 +12,7 @@ def churn_page():
         """,
         unsafe_allow_html=True,
     )
-    # st.title("Customer Churn Prediction")
     churn_model = load_model('models/churn_model.keras')
-
-    #st.markdown("Fill out the form below to predict whether a customer will churn or not.")
-
     # Input form
     with st.form("churn_form"):
         # Categorical Inputs
