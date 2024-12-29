@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import os
 from keras.models import load_model
 
 def churn_page():
@@ -13,7 +14,7 @@ def churn_page():
         unsafe_allow_html=True,
     )
     # Get the absolute path to the models folder
-    model_path = os.path.join(os.path.dirname(__file__), "models", "churn_model.keras")
+    model_path = os.path.join(os.getcwd(), "models", "churn_model.keras")
 
     # Load the model
     churn_model = load_model(model_path)
