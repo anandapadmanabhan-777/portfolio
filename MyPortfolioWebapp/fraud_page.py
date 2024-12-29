@@ -1,28 +1,3 @@
-# import streamlit as st
-# from keras.models import load_model
-# import pandas as pd
-
-# def fraud_page():
-#     st.markdown(
-#         """
-        
-#             <h1 class="custom-heading2">Credit Card Fraud Detection</h1>
-#             <h3 class="custom-subheader">Fraud Detection Model Loaded..!!</h3>
-#             <h3 class="custom-subheader">Upload a CSV file with transaction data to detect fraud.</h3>
-#         """,
-#         unsafe_allow_html=True,
-#     )
-#     fraud_model = load_model('models/fraud_model.keras')
-#     uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
-#     if uploaded_file is not None:
-#         data = pd.read_csv(uploaded_file)
-#         st.write(data.head())
-#         if st.button("Predict Fraud"):
-#             prediction = fraud_model.predict(data)
-#             st.write("Prediction:", prediction)
-#END
-
-
 import streamlit as st
 import pandas as pd
 from keras.models import load_model
