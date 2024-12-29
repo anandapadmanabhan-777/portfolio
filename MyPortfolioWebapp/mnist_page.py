@@ -13,10 +13,7 @@ def mnist_page():
         """,
         unsafe_allow_html=True,
     )
-    #st.title("MNIST Digit Recognizer")
     mnist_model = load_model('models/mnist_model.keras')
-    #st.write("MNIST Model Loaded!")
-    #st.write("Upload an image of a handwritten digit (0-9) for classification.")
     uploaded_image = st.file_uploader("Choose an image", type=["jpg", "png", "jpeg"])
     if uploaded_image is not None:
         image = Image.open(uploaded_image)
