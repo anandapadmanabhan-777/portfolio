@@ -14,10 +14,7 @@ def fashion_page():
         """,
         unsafe_allow_html=True,
     )
-    #st.title("Fashion-MNIST Classifier")
     fashion_mnist_model = load_model('models/fashion_mnist_model.keras')
-    #st.write("Fashion MNIST Model Loaded!")
-    #st.write("Upload an image of a fashion item to classify it.")
     uploaded_image = st.file_uploader("Choose an image", type=["jpg", "png", "jpeg"])
     if uploaded_image is not None:
         image = Image.open(uploaded_image)
