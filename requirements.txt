@@ -1,1 +1,10 @@
-
+streamlit
+pandas
+numpy
+Pillow
+tensorflow
+keras
+streamlit-option-menu
+scikit-learn
+matplotlib
+tensorflow
