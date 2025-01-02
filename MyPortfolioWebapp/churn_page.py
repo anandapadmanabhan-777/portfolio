@@ -14,7 +14,7 @@ def churn_page():
         unsafe_allow_html=True,
     )
     # Load the model
-    churn_model = load_model('models/churn_model.keras')
+    churn_model = load_model('churn_model.keras')
     # Input form
     with st.form("churn_form"):
         # Categorical Inputs
