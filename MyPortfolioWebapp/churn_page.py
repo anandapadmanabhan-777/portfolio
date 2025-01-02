@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 from keras.models import load_model
-
+from tensorflow.keras.models import load_model  # Import load_model
 def churn_page():
     st.markdown(
         """
