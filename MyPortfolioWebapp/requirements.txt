@@ -2,7 +2,7 @@ streamlit
 pandas
 numpy
 Pillow
-tensorflow
+tensorflow==2.18.0 
 keras
 streamlit-option-menu
 scikit-learn
