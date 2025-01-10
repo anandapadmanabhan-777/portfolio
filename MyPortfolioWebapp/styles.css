@@ -29,7 +29,7 @@
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 15px; /* Consistent padding */
+    padding: 15px !important; /* Consistent padding */
     border-radius: 10px; /* Rounded corners */
     max-width: 800px; /* Restrict width */
     width: fit-content; /* Fit to content size */
