@@ -13,8 +13,14 @@ def churn_page():
         """,
         unsafe_allow_html=True,
     )
+    # Load the trained model
+    try:
+        model = load_model('churn_model.keras')
+    except Exception as e:
+        st.error(f"Error loading the model: {e}")
+        model = None
     # Load the model
-    churn_model = load_model('churn_model.keras')
+    #churn_model = load_model('churn_model.keras')
     # Input form
     with st.form("churn_form"):
         # Categorical Inputs
