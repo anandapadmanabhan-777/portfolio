@@ -80,7 +80,7 @@
 
 /* Custom Subheader Style */
 .custom-subheader {
-    font-family: 'Atma', cursive;
+    font-family: 'Atma', cursive !important;
     font-size: 26px;
     text-align: left;
 }
