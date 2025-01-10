@@ -43,7 +43,7 @@
 
 /* Custom Heading Style */
 .custom-heading {
-    font-family: 'Atma', cursive;
+    font-family: 'Atma', cursive !important;
     font-size: 50px;
     text-align: center;
     
