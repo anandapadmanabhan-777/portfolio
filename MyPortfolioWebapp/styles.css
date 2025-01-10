@@ -36,7 +36,7 @@
     
     margin: auto; /* Center the content */
     box-sizing: border-box; /* Include padding in width/height */
-    text-align: center; /* Center-align text */
+    text-align: center !important; /* Center-align text */
 }
 
 
