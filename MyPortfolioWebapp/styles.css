@@ -93,13 +93,13 @@
 
 /* Custom lines on the about page */
 .custom-lines2 {
-    font-family: 'Atma', cursive;
+    font-family: 'Atma', cursive !important;
     font-size: 26px;
     text-align: center;
 }
 /* Custom lines for Education Details */
 .custom-lines3 {
-    font-family: 'Atma', cursive;
+    font-family: 'Atma', cursive !important;
     font-size: 26px;
     text-align: left;
     padding: 7px;
